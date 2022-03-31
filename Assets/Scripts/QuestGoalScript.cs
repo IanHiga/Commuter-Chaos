@@ -1,13 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class QuestMarkerScript : MonoBehaviour
+public class QuestGoalScript : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        this.GetComponentInParent<QuestScript>().ActivateQuest();
+        this.GetComponentInParent<QuestScript>().FinishQuest();
     }
-
 }

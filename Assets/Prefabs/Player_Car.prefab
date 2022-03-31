@@ -66,6 +66,7 @@ MonoBehaviour:
   backLeft: {fileID: 6304471107699487673}
   acceleration: 1000
   breakingForce: 500
+  maxTurnAngle: 15
 --- !u!54 &8668793763389827050
 Rigidbody:
   m_ObjectHideFlags: 0
