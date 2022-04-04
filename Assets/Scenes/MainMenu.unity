@@ -478,7 +478,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1847826713}
         m_TargetAssemblyTypeName: ScreenTransition, Assembly-CSharp
-        m_MethodName: Switch_to_Game
+        m_MethodName: Switch_to_Quest_Test_Scene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -538,6 +538,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ab6d07f141d5c54785f05a3e7d2d822, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  quest_text: {fileID: 0}
 --- !u!114 &627642376
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1390,6 +1391,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ab6d07f141d5c54785f05a3e7d2d822, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  quest_text: {fileID: 0}
 --- !u!114 &1847826714
 MonoBehaviour:
   m_ObjectHideFlags: 0

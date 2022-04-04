@@ -22,7 +22,12 @@ public class ScreenTransition : MonoBehaviour
 	{
 		SceneManager.LoadScene("MainMenu");
 	}
-
+	
+	public void Switch_to_Quest_Test_Scene()
+	{
+		SceneManager.LoadScene("QuestTestScene");
+	}
+	
 	//testing text change
 	public void Update_Text()
 	{
