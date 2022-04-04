@@ -15,12 +15,16 @@ public class ScreenTransition : MonoBehaviour
 
 	public void Switch_to_Pause()
 	{
-		SceneManager.LoadScene("PauseMenu");
+		//SceneManager.LoadScene("PauseMenu");
+		//Revert back to line above for non-additive scene loading of Pause Menu		
+		Time.timeScale = 0;
+		SceneManager.LoadScene("PauseMenu", LoadSceneMode.Additive);
 	}
 
 	public void Switch_to_Main_Menu()
 	{
 		SceneManager.LoadScene("MainMenu");
+		Time.timeScale = 1;	//also need this line in here for going from pause --> main menu
 	}
 	
 	public void Switch_to_Quest_Test_Scene()
@@ -28,6 +32,12 @@ public class ScreenTransition : MonoBehaviour
 		SceneManager.LoadScene("QuestTestScene");
 	}
 	
+	public void Resume_Game()
+	{
+		SceneManager.UnloadSceneAsync("PauseMenu");
+		Time.timeScale = 1;
+	}
+
 	//testing text change
 	public void Update_Text()
 	{
