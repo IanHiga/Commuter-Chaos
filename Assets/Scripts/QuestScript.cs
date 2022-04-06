@@ -38,6 +38,7 @@ public class QuestScript : MonoBehaviour
         goalObject.SetActive(false);
         questFinished = true;
         questMgr.DeactivateQuest();
+        questMgr.UpdateNumCompleted();
     }
 
     public bool IsQuestFinished()

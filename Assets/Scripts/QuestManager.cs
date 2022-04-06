@@ -8,11 +8,14 @@ public class QuestManager : MonoBehaviour
 {
     [SerializeField] private GameObject[] questObjects;
     [SerializeField] private Text questText;
+    [SerializeField] private Text completedQuestText;
     private int curQuestNum;
+    private int completedQuests;
 
     private void Start()
     {
         curQuestNum = 0;
+        completedQuests = 0;
     }
 
     public void ActivateQuest(int numQuest)
@@ -52,6 +55,12 @@ public class QuestManager : MonoBehaviour
             questText.text = "Find a new quest!";
             curQuestNum = 0;
         }
+    }
+
+    public void UpdateNumCompleted()
+    {
+        completedQuests++;
+        completedQuestText.text = completedQuests.ToString();
     }
 
     public Text GetQuestDescText()
